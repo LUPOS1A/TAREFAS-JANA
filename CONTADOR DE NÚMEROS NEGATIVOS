@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int v[20], negativos = 0;
+
+    printf("Digite 20 números:\n");
+    for (int i = 0; i < 20; i++) {
+        scanf("%d", &v[i]);
+        if (v[i] < 0) {
+            negativos++;
+        }
+    }
+
+    printf("Quantidade de números negativos: %d\n", negativos);
+    return 0;
+}
