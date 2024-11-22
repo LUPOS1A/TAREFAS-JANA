@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    int vetor[10], numero;
+    for (int i = 0; i < 10; i++) scanf("%d", &vetor[i]);
+    scanf("%d", &numero);
+    for (int i = 0; i < 10; i++) printf("%d ", vetor[i] * numero);
+    return 0;
+}
