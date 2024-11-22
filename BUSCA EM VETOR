@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int vetor[10], numero, encontrado = 0;
+
+    for (int i = 0; i < 10; i++) {
+        scanf("%d", &vetor[i]);
+    }
+
+    scanf("%d", &numero);
+
+    for (int i = 0; i < 10; i++) {
+        if (vetor[i] == numero) {
+            encontrado = 1;
+            break;
+        }
+    }
+
+    if (encontrado) {
+        printf("O número %d está no vetor.\n", numero);
+    } else {
+        printf("O número %d não está no vetor.\n", numero);
+    }
+
+    return 0;
+}
